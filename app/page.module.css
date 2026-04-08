@@ -60,6 +60,30 @@
   background: #000000;
 }
 
+.button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.error {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #b91c1c;
+}
+
+.welcome {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.welcomeText {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
 @media (prefers-color-scheme: dark) {
   .card {
     background: #111827;
@@ -84,5 +108,9 @@
 
   .button:hover {
     background: #e5e7eb;
+  }
+
+  .error {
+    color: #fca5a5;
   }
 }
